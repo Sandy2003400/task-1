@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link type="image/x-icon" rel="icon" href="../Assets/Icons/favicon.ico" />
+    <title>Examples on Form</title>
+    <style>
+        body{
+            background-color:grey;
+        }
+        #frmHeader {
+            font-size: 30px;
+            text-align:center;
+        }
+        .parent{
+            width:500px; 
+       background-image:url("image/bg.jpg");
+            background-repeat:no-repeat;
+            margin:auto;
+            padding:20px;
+            background-size:100% 100%;
+            height:552px;
+            margin-top:50px;
+            border-radius:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <p id="frmHeader">Announcement of work</p>
+
+    <form>
+        <label for="text_FirstName">First Name</label>
+        <input id="text_FirstName" type="text" placeholder="Write your first name" autofocus  required/>
+        <br />
+        <label for="text_SecondName">Second Name</label>
+        <input id="text_SecondName" type="text" placeholder="Write your Second name" required />
+        <br />
+        <label for="Pass">Password</label>
+        <input id="Pass" type="password" placeholder="Write your Password" required />
+        <hr />
+
+        <p> Choose your job : </p>
+
+        <input id="Rad1" type="radio" value="first level" name="level" />
+        <label for="Rad1">banker </label> <br />
+
+        <input id="Rad2" type="radio" value="SecondLevel" name="level" />
+        <label for="Rad2">car driver </label> <br />
+
+        <input id="Rad3" type="radio" value="ThirdLevel" name="level" />
+        <label for="Rad3">teacher </label> <br />
+
+        <input id="Rad4" type="radio" value="ForthLevel" name="Level" />
+        <label for="Rad4">computer engineer </label> <br />
+
+        <input id="Rad5" type="radio" value="FifthLevel" name="Level" />
+        <label for="Rad5">farmer </label> <br />
+
+        <p>Choose your languages : </p>
+
+        <input id="Lang1" type="checkbox" value="ar" />
+        <label for="Lang1">Arabic</label><br />
+
+        <input id="Lang2" type="checkbox" value="en" />
+        <label for="Lang2">English</label><br />
+
+        <input id="Lang3" type="checkbox" value="fr" />
+        <label for="Lang3">Russian</label><br />
+        <hr />
+
+        <label for="state"> Choose your government: </label>
+        <select id="state">
+
+            <!--
+
+                for(30)
+                {
+                <option value="Val">Name </option>
+                }
+
+            -->
+
+            <option value="1">cairo </option>
+            <option value="2">alex</option>
+            <option value="3">mansoura</option>
+            <option value="2">sinai</option>
+        </select>
+        <br />
+
+        <label for="FileUploader">Upload your image : </label>
+        <input type="file" id="FileUploader" /> 
+
+        <br />
+        <button type="submit">Click here</button>
+        <br />
+        <input type="reset" value="delet" />
+    </form>
+
+    <br /><br /><br /><br /><br /><br />
+        </div>
+</body>
+</html>
